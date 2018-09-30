@@ -22,9 +22,9 @@ exports.run = function(client, message, args) {
     const sohbetsilindi = new Discord.RichEmbed()
     .setColor(0xD97634)
     .setTimestamp()
-    .addField('Eylem:', 'Sohbet silme')
-    .addField('Yetkili:', message.author.username)
-    .addField('Sonuç:', `Başarılı`)
+    .addField('', 'Sohbet Temizleme')
+    .addField('', message.author.username)
+    .addField('', `Başarılı`)
     return message.channel.sendEmbed(sohbetsilindi);
     console.log("Sohbet " + message.member + " tarafından silindi!");
 };
